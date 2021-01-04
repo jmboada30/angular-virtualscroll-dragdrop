@@ -1,0 +1,7 @@
+<div itemSize="50" class="list-group" cdkDropList
+(cdkDropListDropped)="drop($event)">
+
+    <div class="list-group-item" *ngFor="let pais of paises; let i = index; let conteo = count" cdkDrag>
+        {{ pais.name }}
+    </div>
+</div>

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "graficos": {
+    "virtualscroll-dragdrop": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/graficos",
+            "outputPath": "dist/virtualscroll-dragdrop",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -89,22 +89,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "graficos:build"
+            "browserTarget": "virtualscroll-dragdrop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "graficos:build:production"
+              "browserTarget": "virtualscroll-dragdrop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "graficos:build"
+            "browserTarget": "virtualscroll-dragdrop:build"
           }
         }
       }
     }
   },
-  "defaultProject": "graficos"
+  "defaultProject": "virtualscroll-dragdrop"
 }
